@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <title>Questionnaire</title>
+      <link rel="stylesheet" type="text/css" href="css/counterServlet.css">
+  </head>
+  <body>
+    <form action="/counter" method="POST">
+        <div class="conteiner_for_anketa">
+        <table id="anketa">
+            <tr><td class="names">First name:</td><td class="variants"><input type="text" name="name"></td></tr>
+            <tr><td class="names">Last name:</td><td class="variants"><input type="text" name="surname"></td></tr>
+            <tr><td class="names">Your age:</td><td class="variants"><input type="text" name="age"></td></tr>
+
+            <tr><td class="names">Your gender:</td>
+                <td class="variants"><div>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                </td>
+            </tr>
+            <tr><td class="names">Education:</td>
+                <td class="variants">
+                    <input type="radio" name="education" value="no" checked> No<br>
+                    <input type="radio" name="education" value="school"> School<br>
+                    <input type="radio" name="education" value="professionally school"> Professionally school<br>
+                    <input type="radio" name="education" value="high school"> High school<br>
+                </td>
+            </tr>
+            <tr><td class="names">Marital Status:</td>
+                <td class="variants">
+                    <input type="radio" name="maritalStatus" value="single" checked> Single<br>
+                    <input type="radio" name="maritalStatus" value="married"> Married<br>
+                </td>
+            </tr>
+            <tr><td colspan="2">
+                <div id="conteiner_for_ok">
+                    <div style="margin: 0 auto;width: 100px; height: 20px;"><input type="submit" value="Ok" id="ok"></div>
+                </div>
+            </td></tr>
+        </table>
+        </div>
+    </form>
+  </body>
+</html>
